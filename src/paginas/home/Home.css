@@ -1,0 +1,11 @@
+.Titulo{
+    color: blue;
+    Text-align: center;
+}
+
+.img{
+    width: 300px;
+    height: 500px;
+    display: block;
+    margin: 0 auto  ;
+}
