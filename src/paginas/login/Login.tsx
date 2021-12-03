@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -9,7 +9,7 @@ function Login() {
             <Grid alignItems="center" xs={6}>
                 <Box paddingX={20}>
                     <form>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ fontWeight: "bold" }}>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos1">
                             Entrar
                         </Typography>
                         <TextField id="usuario" label="usuario" variant="outlined" name="usuario" margin="normal" fullWidth />
@@ -20,13 +20,19 @@ function Login() {
                             </Link>
                         </Box>
                     </form>
+                    <Box display="flex" justifyContent="center" marginTop={2}>
+                        <Box>
+                            <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta?</Typography>
+                        </Box>
+                        <Link to="/cadastrousuario">
+                            <Typography variant="subtitle1" gutterBottom align="center" className="textos1">Cadastre-se</Typography>
+                        </Link>
+                    </Box>
                 </Box>
             </Grid>
-            <Grid xs={6}>
-
+            <Grid xs={6} className="imagem">
             </Grid>
         </Grid>
     );
 }
-
 export default Login;

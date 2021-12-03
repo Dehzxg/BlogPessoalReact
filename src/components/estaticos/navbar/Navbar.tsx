@@ -13,7 +13,6 @@ function Navbar() {
                             BlogPessoal
                         </Typography>
                     </Box>
-
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
@@ -36,7 +35,7 @@ function Navbar() {
                             </Typography>
                         </Box>
                         <Link to="/login" className="text-decorator-none">
-                            <Box mx={1} className='cursor'>
+                            <Box mx={1} className='cursor' color="white">
                                 <Typography variant="h6" color="inherit">
                                     logout
                                 </Typography>

@@ -1,9 +1,5 @@
-.textos1{
-    font-weight: bold !important;
-}
-
-.imagem{
-                background-image: url(https://i.imgur.com/fsIz6ws.jpeg);
+.imagem2{
+                background-image: url(https://i.imgur.com/c8bRRpF.jpegg);
                 background-repeat: no-repeat;
                 width: 100vh;
                 min-height: 100vh;
@@ -11,6 +7,11 @@
                 background-position: center;
 }
 
-.text-decorator-none {
-    text-decoration: none;
+.textos2 {
+
+    font-weight: bold !important;
+}
+
+.btnCancelar {
+    margin-right: 20px !important;
 }
