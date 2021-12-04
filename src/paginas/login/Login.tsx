@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import UserLogin from "../../models/UserLogin";
 import "./Login.css";
 
 function Login() {
+
+    const [UserLogin, setUserLogin] = useState<UserLogin>(
+        {
+            id: 0,
+            usuario: '',
+            senha: '',
+            token: ''
+        }
+    )
     return (
         <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid alignItems="center" xs={6}>
